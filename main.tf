@@ -1,5 +1,5 @@
 module "vpc" {
-  source  = "app.terraform.io/am-terraform-lab/vpc/AWS"
+  source  = "app.terraform.io/am-terraform-lab/vpc/aws"
   version = "1.0.0"
 
   vpc_name = "final-challenge-vpc"
