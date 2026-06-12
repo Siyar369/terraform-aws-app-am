@@ -1,5 +1,5 @@
 module "vpc" {
-  source  = "app.terraform.io/am-terraform-lab/vpc/aws"
+  source  = "app.terraform.io/am-terraform-lab/vpc-am/aws"
   version = "1.0.0"
 
   vpc_name = "final-challenge-vpc"
@@ -20,8 +20,8 @@ module "vpc" {
     "10.0.102.0/24"
   ]
 
-  enable_nat_gateway  = true
-  single_nat_gateway  = true
+  enable_nat_gateway = true
+  single_nat_gateway = true
 
   tags = {
     Environment = "FinalLab"
